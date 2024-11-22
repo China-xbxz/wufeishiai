@@ -2,11 +2,8 @@
 
 1. 从五个公开的网页抓取ip、线路、延迟数据  
     https://cf.090227.xyz  
-    https://stock.hostmonit.com/CloudFlareYes  
     https://ip.164746.xyz  
-    https://monitor.gacjie.cn/page/cloudflare/ipv4.html  
-    https://345673.xyz  
-
+   
 3. 将获取的数据进行筛选、去重，按国家命名，并在仓库内生成`yx.ips.txt`文件
 
 4. 从`yx.ips.txt`文件中提取ip地址，将延迟低于100ms的IP自动更新到cf子域名的dns记录中（先清空再更新，不影响根域名）
