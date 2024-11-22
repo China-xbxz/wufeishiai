@@ -17,10 +17,8 @@ headers = {
 # 定义五个网址
 urls = [
     "https://cf.090227.xyz/",
-    "https://ip.164746.xyz/",
-    "https://raw.githubusercontent.com/China-xbxz/saomiaoipip/refs/heads/main/SG.txt",
-    "https://raw.githubusercontent.com/China-xbxz/saomiaoipip/refs/heads/main/HK.txt",
-    "https://raw.githubusercontent.com/China-xbxz/saomiaoipip/refs/heads/main/KR.txt"
+    "https://ip.164746.xyz/"
+
 ]
 
 # 解析延迟数据的正则表达式
