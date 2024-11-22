@@ -9,7 +9,7 @@ FDIP_DIR="${BASE_DIR}/FDIP"
 CFST_DIR="${BASE_DIR}/CloudflareST"
 URL="https://spurl.api.030101.xyz/50mb"
 SAVE_PATH="${FDIP_DIR}/txt.zip"
-FISSION_IP_URL="https://raw.githubusercontent.com/China-xbxz/saomiaoipip/refs/heads/main/Fission_ip.txt"
+FISSION_IP_URL="https://raw.githubusercontent.com/China-xbxz/saomiaoipip/refs/heads/main/HK.txt"
 FISSION_IP_FILE="${FDIP_DIR}/Fission_ip.txt"
 
 # 创建所需目录
