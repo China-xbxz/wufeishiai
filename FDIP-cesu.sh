@@ -44,7 +44,9 @@ awk '!seen[$0]++' "${FDIP_DIR}/45102-1-443.txt" "${FDIP_DIR}/31898-1-443.txt" "$
 # 5. 读取 all.txt 并查询归属地，保留 SG（新加坡）、HK（香港）、KR（韩国）、TW（台湾）的IP地址
 echo "=========================筛选国家代码为SG、HK、KR、TW的IP地址=========================="
 while IFS= read -r ip; do
-    country_code=$(curl -s "https://ipapi.co/$ip/country/" | tr -d '[:space:]')
+    # 使用新 API 获取 IP 的国家信息
+    country_code=$(curl -s "https://ipgeo-api.hf.space/${ip}" | jq -r '.registered_country.code')
+    
     case "$country_code" in
         "SG")
             echo $ip >> "${CFST_DIR}/sg.txt"
